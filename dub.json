@@ -1,0 +1,30 @@
+{
+	"name": "sqlite",
+	"authors": [ "UI Manufaktur Team"	],
+	"description": "A minimal D application.",
+	"copyright": "Copyright © 2017-2022, UI Manufaktur UG",
+	"license": "Apache-2.0",
+	"targetType":"library",
+	"dependencies": {
+		"d2sqlite3": "~>0.19.1",
+		"uim-core": {
+			"repository": "git+https://github.com/UI-Manufaktur/uim-core.git",
+			"version": "9171179266f02bafce9b9d7cba01f97354d01a59"
+		},
+		"uim-oop": {
+				"repository": "git+https://github.com/UI-Manufaktur/uim-oop.git",
+				"version": "a6fb933896b9864243e4455e61c77bc07f2b96e4"
+		}	
+	},
+	"subConfigurations": {
+        "d2sqlite3": "all-included"
+    },
+	"sourcePaths": [
+		"../../LIBS/uim-sql",
+		"./"
+	],
+	"importPaths": [
+		"../../LIBS/uim-sql",
+		"./"
+	]
+}
