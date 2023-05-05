@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="dub.json">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" PreferredExecutionTarget="cov" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../core/source/uim/core/mixins/property.d">
+    <Files>
+      <File FileName="dub.json" Line="13" Column="1" />
+      <File FileName="source/uim/sqlite/sql.d" Line="1" Column="1" />
+      <File FileName="source/uim/sqlite/table.d" Line="14" Column="13" />
+      <File FileName="source/uim/sqlite/package.d" Line="1" Column="1" />
+      <File FileName="../core/source/uim/core/mixins/property.d" Line="28" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
