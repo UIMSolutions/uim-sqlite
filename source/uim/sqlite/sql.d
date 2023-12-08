@@ -71,15 +71,17 @@ auto select(string table, string attr = "*", string where = null, string orderBy
 	if (limit) sql~=" LIMIT "~to!string(limit);
 	return sql; }
 
-void insert(Database db, string table, string[string] values) {
+void insert(Database db, string table, STRINGAA values) {
 	auto keys = values.keys;
 	string[] vs; vs.length = keys.length;
 	foreach(index, k; keys) vs[index] = values[k]; 
 
 	auto sql = insert(table, keys, vs);
 	debug writeln(sql);
-	db.execute(sql); }
-string insert(string table, string[string] values) {
+	db.execute(sql); 
+}
+
+string insert(string table, STRINGAA values) {
 	auto keys = values.keys;
 	string[] vs; vs.length = keys.length;
 	foreach(index, k; keys) vs[index] = values[k]; 
@@ -89,8 +91,12 @@ string insert(string table, string[string] values) {
 void insert(Database db, string table, string[] fields, string[] values) {
 	auto sql = insert(table, fields, values);
 	debug writeln(sql);
-	db.execute(sql); }
-string insert(string table, string[] fields, string[] values) { return insert(table, fields.join(","), values.join(",")); }
+	db.execute(sql); 
+}
+
+string insert(string table, string[] fields, string[] values) { 
+	return insert(table, fields.join(","), values.join(",")); 
+}
 
 Database insert(Database db, string table, string fields, string values) {
 	auto sql = insert(table, fields, values);
